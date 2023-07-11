@@ -1,0 +1,6 @@
+Hanover | Boston | 189
+Boston | New York | 246
+New York | Chicago | 1170
+Chicago | Madison | 238
+Madison | Middleton | 20
+Hanover | Middleton | 2907
