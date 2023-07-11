@@ -1,0 +1,16 @@
+Text Compression and the Greedy Method 597
+Algorithm Huffman(X):
+Input: String X of length n with d distinct characters
+Output: Coding tree for X
+Compute the frequency f (c) of each character c of X.
+Initialize a priority queue Q.
+for each character c in X do
+Create a single-node binary tree T storing c.
+Insert T into Q with key f (c).
+while Q.size( ) > 1 do
+Entry e1 = Q.removeMin( ) with e1 having key f1 and value T1.
+Entry e2 = Q.removeMin( ) with e2 having key f2 and value T2.
+Create a new binary tree T with left subtree T1 and right subtree T2.
+Insert T into Q with key f1+ f2.
+Entry e = Q.removeMin( ) with e having tree T as its value.
+return tree T
